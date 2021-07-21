@@ -18,3 +18,8 @@ execute as @a[scores={level=3..,tpprotect=1..}] at @s run function green:user/co
 scoreboard objectives add rmprotect trigger
 scoreboard players enable @a[scores={level=3..}] rmprotect
 execute as @a[scores={level=3..,rmprotect=1..}] at @s run function green:user/command/defs/rmprotect
+
+# Tpto
+scoreboard objectives add tpto trigger
+scoreboard players enable @a[scores={level=3..}] tpto
+execute as @a[scores={level=3..,tpto=1..}] at @s run function green:user/command/defs/tpto
