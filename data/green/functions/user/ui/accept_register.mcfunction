@@ -1,3 +1,4 @@
 scoreboard players set @s cache 0
 tag @s add level_registered
-tellraw @a [{"text": "GCS3","color": "aqua"},{"text": ">> ","color": "white","bold": true},{"text": "恭喜用户","bold": false},{"selector": "@s","color": "aqua"},{"text": "成功注册进本房间！","color": "white"}]
+tellraw @s "感谢您的理解与配合。您现在离开主城便可开始建造了。"
+tell @a[scores={level=4..}] 新人注册 @s
