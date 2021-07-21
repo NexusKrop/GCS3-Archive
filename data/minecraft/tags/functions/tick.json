@@ -1,0 +1,17 @@
+{
+    "values": [
+        "green:user/permissions/display",
+        "green:user/permissions/gamemode",
+        "green:user/permissions/register",
+        "green:user/permissions/ban",
+        "green:user/command/commandroot",
+        "green:security/tnt_safe",
+        "green:user/ui/register_triggers/trigger_core",
+        "green:user/experience/conveyer",
+        "green:user/experience/bsprotect",
+        "green:user/permissions/rat",
+        "green:user/greetings/timer",
+        "green:util/init",
+        "green:security/anticheat/inventory"
+    ]
+}

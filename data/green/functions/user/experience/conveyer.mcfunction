@@ -1,0 +1,1 @@
+execute as @a at @s if block ~ ~-1 ~ magenta_glazed_terracotta run effect give @s speed 8 4 false

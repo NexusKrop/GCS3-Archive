@@ -1,0 +1,1 @@
+execute in minecraft:overworld run execute as @a[distance=750..] run trigger spawn
