@@ -12,6 +12,7 @@
         "green:user/permissions/rat",
         "green:user/greetings/timer",
         "green:util/init",
-        "green:security/anticheat/inventory"
+        "green:security/anticheat/inventory",
+        "green:user/experience/sessionid"
     ]
 }
