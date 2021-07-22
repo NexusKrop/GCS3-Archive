@@ -3,5 +3,6 @@ execute as @e[type=armor_stand,tag=building_protector] at @s run execute if scor
 execute unless entity @e[type=armor_stand,tag=building_protector,scores={viceCache=13770}] run tellraw @s[scores={level=3..}] [{"text": "GCS3","color": "aqua"},{"text": ">> ","color": "white","bold": true},{"text": "指定的保护器不存在","color": "red"}]
 execute if entity @e[type=armor_stand,tag=building_protector,scores={viceCache=13770}] run tellraw @s[scores={level=3..}] [{"text": "GCS3","color": "aqua"},{"text": ">> ","color": "white","bold": true},{"text": "已传送至保护器","color": "white"}]
 execute if entity @e[type=armor_stand,tag=building_protector,scores={viceCache=13770}] run tp @s @e[type=armor_stand,tag=building_protector,scores={viceCache=13770},limit=1]
+scoreboard players set @s viceCache 0
 scoreboard players set @e[type=armor_stand,tag=building_protector,scores={viceCache=13770}] viceCache 0
 scoreboard players set @s tpprotect 0

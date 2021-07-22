@@ -4,4 +4,5 @@ execute unless entity @a[scores={viceCache=12356}] run tellraw @s[scores={level=
 execute if entity @a[scores={viceCache=12356}] run tellraw @s[scores={level=3..}] [{"text": "GCS3","color": "aqua"},{"text": ">> ","color": "white","bold": true},{"text": "已传送至用户","color": "white"}]
 execute if entity @a[scores={viceCache=12356}] run tp @s @a[scores={viceCache=12356},limit=1]
 scoreboard players set @a[scores={viceCache=12356}] viceCache 0
+scoreboard players set @s viceCache 0
 scoreboard players set @s tpto 0
