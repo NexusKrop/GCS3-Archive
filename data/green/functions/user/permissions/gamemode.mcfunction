@@ -1,5 +1,5 @@
 scoreboard players add @a level 0
-gamemode adventure @a[scores={level=0}]
+gamemode adventure @a[scores={level=0},tag=!level_registered,tag=!level_fish,tag=!level_fishplus,tag=!level_admin,tag=!level_sa]
 gamemode adventure @a[tag=rat]
 execute as @a[scores={level=1..4}] run execute if entity @s[x=0,y=0,z=0,distance=..50,tag=!rat] run gamemode adventure
 execute as @a[scores={level=1..4}] run execute if entity @s[x=0,y=0,z=0,distance=50..,tag=!rat] run gamemode creative

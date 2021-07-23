@@ -1,2 +1,2 @@
 scoreboard players add @a cache 0
-execute as @a[scores={level=0}] run execute if entity @s[scores={cache=0}] run function green:user/ui/register
+execute as @a[scores={level=0},tag=!level_registered,tag=!level_fish,tag=!level_fishplus,tag=!level_admin,tag=!level_sa] run execute if entity @s[scores={cache=0}] run function green:user/ui/register

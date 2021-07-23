@@ -14,6 +14,7 @@
         "green:util/init",
         "green:security/anticheat/inventory",
         "green:user/experience/sessionid",
-        "green:user/experience/playtime_counter"
+        "green:user/experience/playtime_counter",
+        "green:security/banned_items"
     ]
 }

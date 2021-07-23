@@ -4,6 +4,12 @@ scoreboard players enable @a spawn
 execute as @a[scores={spawn=1..}] run tp 0 41 0
 execute as @a[scores={spawn=1..}] run scoreboard players set @s spawn 0
 
+# Spawn
+scoreboard objectives add rule trigger
+scoreboard players enable @a rule
+execute as @a[scores={rule=1..}] run function green:user/allofrule
+execute as @a[scores={rule=1..}] run scoreboard players set @s rule 0
+
 # BSProtect
 scoreboard objectives add bsprotect trigger
 scoreboard players enable @a[scores={level=4..}] bsprotect
