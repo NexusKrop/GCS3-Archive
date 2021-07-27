@@ -57,3 +57,9 @@ scoreboard objectives add unlock trigger
 scoreboard players enable @a[scores={level=4..}] unlock
 scoreboard players reset @a[scores={level=..3}] unlock
 execute as @a[scores={level=4..,unlock=1..}] at @s run function green:user/command/defs/unlock
+
+# Mode
+scoreboard objectives add mode trigger
+scoreboard players enable @a[scores={level=5}] mode
+scoreboard players reset @a[scores={level=..4}] mode
+execute as @a[scores={level=5,mode=1..}] at @s run function green:user/command/defs/mode
