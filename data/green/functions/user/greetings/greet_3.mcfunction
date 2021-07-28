@@ -1,4 +1,4 @@
-title @a actionbar {"text": "工具箱轉檔，全是升級塊。網站下架，作者像挂彩。","bold": true}
+title @a actionbar {"text": "存档因突发平台特性出现回档情况，请注意检查你的建筑","bold": true,"color": "red"}
 
 #计分板
 scoreboard objectives setdisplay belowName level

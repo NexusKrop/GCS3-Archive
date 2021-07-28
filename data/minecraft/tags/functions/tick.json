@@ -4,6 +4,7 @@
         "green:user/permissions/gamemode",
         "green:user/permissions/register",
         "green:user/permissions/ban",
+        "green:user/permissions/jail",
         "green:user/command/commandroot",
         "green:security/tnt_safe",
         "green:user/ui/register_triggers/trigger_core",

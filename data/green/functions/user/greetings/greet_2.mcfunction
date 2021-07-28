@@ -1,3 +1,3 @@
-title @a actionbar {"text": "主界亂轉指南針，金鈡半夜竟指陽。村莊生成沙漠殿，無門轉似見閻王。","bold": true}
+title @a actionbar {"text": "本聯機房間禁止使用修改NBT物品、禁止破壞行爲，謝絕熊孩子、CB客","bold": true}
 
 scoreboard objectives setdisplay belowName playtime

@@ -1,0 +1,13 @@
+{
+    "values": [
+        "minecraft:blaze",
+        "minecraft:zombie",
+        "minecraft:area_effect_cloud",
+        "minecraft:dragon_fireball",
+        "minecraft:fireball",
+        "minecraft:skeleton",
+        "minecraft:wither_skeleton",
+        "minecraft:zombie_villager",
+        "minecraft:zombified_piglin"
+    ]
+}

@@ -2,13 +2,16 @@ scoreboard players set killedItems cache 0
 scoreboard players set killedBats cache 0
 scoreboard players set killedXps cache 0
 scoreboard players set killedArrows cache 0
+scoreboard players set killedMisc cache 0
 scoreboard players set totalKills cache 0
 
+execute store result score killedMisc cache run kill @e[type=#green:misc_cleaning]
 execute store result score killedItems cache run kill @e[type=item]
 execute store result score killedBats cache run kill @e[type=bat]
 execute store result score killedXps cache run kill @e[type=experience_orb]
 execute store result score killedArrows cache run kill @e[type=arrow]
 
+scoreboard players operation totalKills cache += killedMisc cache
 scoreboard players operation totalKills cache += killedItems cache
 scoreboard players operation totalKills cache += killedBats cache
 scoreboard players operation totalKills cache += killedXps cache

@@ -4,11 +4,17 @@ scoreboard players enable @a spawn
 execute as @a[scores={spawn=1..}] run tp 0 41 0
 execute as @a[scores={spawn=1..}] run scoreboard players set @s spawn 0
 
-# Spawn
+# Rule
 scoreboard objectives add rule trigger
 scoreboard players enable @a rule
 execute as @a[scores={rule=1..}] run function green:user/allofrule
 execute as @a[scores={rule=1..}] run scoreboard players set @s rule 0
+
+# Blocklist inactive
+# scoreboard objectives add blocklist trigger
+# scoreboard players enable @a blocklist
+# execute as @a[scores={blocklist=1..}] run function green:user/blocklist
+# execute as @a[scores={blocklist=1..}] run scoreboard players set @s blocklist 0
 
 # BSProtect
 scoreboard objectives add bsprotect trigger
@@ -52,14 +58,26 @@ scoreboard players enable @a[scores={level=4..}] lockup
 scoreboard players reset @a[scores={level=..3}] lockup
 execute as @a[scores={level=4..,lockup=1..}] at @s run function green:user/command/defs/lockup
 
+# lock
+scoreboard objectives add jail trigger
+scoreboard players enable @a[scores={level=4..}] jail
+scoreboard players reset @a[scores={level=..3}] jail
+execute as @a[scores={level=4..,jail=1..}] at @s run function green:user/command/defs/jail
+
 # Unlock
 scoreboard objectives add unlock trigger
 scoreboard players enable @a[scores={level=4..}] unlock
 scoreboard players reset @a[scores={level=..3}] unlock
 execute as @a[scores={level=4..,unlock=1..}] at @s run function green:user/command/defs/unlock
 
+# unjail
+scoreboard objectives add unjail trigger
+scoreboard players enable @a[scores={level=4..}] unjail
+scoreboard players reset @a[scores={level=..3}] unjail
+execute as @a[scores={level=4..,unjail=1..}] at @s run function green:user/command/defs/unjail
+
 # Mode
-scoreboard objectives add mode trigger
-scoreboard players enable @a[scores={level=5}] mode
-scoreboard players reset @a[scores={level=..4}] mode
-execute as @a[scores={level=5,mode=1..}] at @s run function green:user/command/defs/mode
+scoreboard objectives add gmode trigger
+scoreboard players enable @a[scores={level=4}] gmode
+scoreboard players reset @a[scores={level=..3}] gmode
+execute as @a[scores={level=4,gmode=1..}] at @s run function green:user/command/defs/mode
