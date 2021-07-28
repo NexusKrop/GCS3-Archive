@@ -1,4 +1,4 @@
-title @a actionbar {"text": "存档因突发平台特性出现回档情况，请注意检查你的建筑","bold": true,"color": "red"}
+title @a actionbar {"text": "守衛者使船擱淺，海底神殿在前方。刷怪籠旁沒寶箱，水井生出仙人掌。","bold": true}
 
 #计分板
 scoreboard objectives setdisplay belowName level
