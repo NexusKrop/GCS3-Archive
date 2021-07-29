@@ -6,3 +6,7 @@ execute if entity @a[scores={viceCache=11112,level=..3}] run tag @a[scores={vice
 scoreboard players set @a[scores={viceCache=11112,level=..3}] viceCache 0
 scoreboard players set @s viceCache 0
 scoreboard players set @s jail 0
+
+execute store result score potions cache run execute if entity @e[type=potion]
+execute if score potions cache matches 15.. run kill @e[type=potion]
+execute if score potions cache matches 15.. run 
