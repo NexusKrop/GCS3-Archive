@@ -10,6 +10,8 @@ scoreboard players enable @a rule
 execute as @a[scores={rule=1..}] run function green:user/allofrule
 execute as @a[scores={rule=1..}] run scoreboard players set @s rule 0
 
+
+
 # Blocklist inactive
 # scoreboard objectives add blocklist trigger
 # scoreboard players enable @a blocklist
@@ -81,3 +83,8 @@ scoreboard objectives add gmode trigger
 scoreboard players enable @a[scores={level=4}] gmode
 scoreboard players reset @a[scores={level=..3}] gmode
 execute as @a[scores={level=4,gmode=1..}] at @s run function green:user/command/defs/mode
+
+# Play
+scoreboard objectives add play trigger
+scoreboard players enable @a play
+execute as @a[scores={play=1..}] at @s run function green:user/command/defs/play
