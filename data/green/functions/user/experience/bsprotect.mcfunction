@@ -1,5 +1,6 @@
 scoreboard objectives add protectorId dummy
 scoreboard players add @e[type=armor_stand,tag=building_protector] protectorId 0
+execute if score maxProtectorId cache matches 0..1 run scoreboard players set maxProtectorId cache 2
 scoreboard players add @e[type=armor_stand,tag=building_protector] cache 0
 
 execute store success score pIdSuccess cache run execute as @e[type=armor_stand,tag=building_protector,scores={protectorId=0}] run scoreboard players operation @s protectorId = maxProtectorId cache

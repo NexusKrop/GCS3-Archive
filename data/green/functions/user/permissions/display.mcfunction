@@ -1,5 +1,5 @@
-team add superAdmins "超级管理员"
-team modify superAdmins prefix [{"text": "[","color": "gold"},{"text": "ROOT","color": "aqua"},{"text": "] ","color": "gold"}]
+team add superAdmins "行政员"
+team modify superAdmins prefix [{"text": "[","color": "gold"},{"text": "BCRAT","color": "aqua"},{"text": "] ","color": "gold"}]
 team modify superAdmins color dark_aqua
 team join superAdmins @a[scores={level=5},team=!superAdmins]
 scoreboard players set @a[tag=level_sa,scores={level=..4}] level 5

@@ -2,6 +2,7 @@
 scoreboard objectives add spawn trigger
 scoreboard players enable @a spawn
 execute as @a[scores={spawn=1..}] run tp 0 41 0
+execute as @a[scores={spawn=1..}] run tag @s remove obby
 execute as @a[scores={spawn=1..}] run scoreboard players set @s spawn 0
 
 # Rule
@@ -35,10 +36,10 @@ scoreboard players reset @a[scores={level=..3}] tpprotect
 execute as @a[scores={level=4..,tpprotect=1..}] at @s run function green:user/command/defs/tpprotect
 
 # RmProtect
-scoreboard objectives add rmprotect trigger
-scoreboard players enable @a[scores={level=4..}] rmprotect
-scoreboard players reset @a[scores={level=..3}] rmprotect
-execute as @a[scores={level=4..,rmprotect=1..}] at @s run function green:user/command/defs/rmprotect
+scoreboard objectives add dlprotect trigger
+scoreboard players enable @a[scores={level=4..}] dlprotect
+scoreboard players reset @a[scores={level=..3}] dlprotect
+execute as @a[scores={level=4..,dlprotect=1..},limit=1] at @s run function green:user/command/defs/rmprotect
 
 # Tpto
 scoreboard objectives add tpto trigger
@@ -51,6 +52,12 @@ scoreboard objectives add block trigger
 scoreboard players enable @a[scores={level=5..}] block
 scoreboard players reset @a[scores={level=..4}] block
 execute as @a[scores={level=5..,block=1..}] at @s run function green:user/command/defs/block
+
+# makeadm
+scoreboard objectives add makeadm trigger
+scoreboard players enable @a[scores={level=5..}] makeadm
+scoreboard players reset @a[scores={level=..4}] makeadm
+execute as @a[scores={level=5..,makeadm=1..}] at @s run function green:user/command/defs/makeadm
 
 # UnBlock
 scoreboard objectives add unblock trigger
@@ -84,9 +91,9 @@ execute as @a[scores={level=4..,unjail=1..}] at @s run function green:user/comma
 
 # Mode
 scoreboard objectives add gmode trigger
-scoreboard players enable @a[scores={level=4}] gmode
+scoreboard players enable @a[scores={level=4..}] gmode
 scoreboard players reset @a[scores={level=..3}] gmode
-execute as @a[scores={level=4,gmode=1..}] at @s run function green:user/command/defs/mode
+execute as @a[scores={level=4..,gmode=1..}] at @s run function green:user/command/defs/mode
 
 # Play
 scoreboard objectives add play trigger

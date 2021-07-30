@@ -17,8 +17,10 @@
         "green:user/experience/sessionid",
         "green:user/experience/playtime_counter",
         "green:user/experience/void",
+        "green:user/experience/bye",
         "green:security/banned_items",
         "green:security/anticheat/mirror",
-        "green:security/anticheat/alert"
+        "green:security/anticheat/alert",
+        "green:user/experience/obby"
     ]
 }

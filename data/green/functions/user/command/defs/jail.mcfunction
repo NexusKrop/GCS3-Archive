@@ -9,4 +9,3 @@ scoreboard players set @s jail 0
 
 execute store result score potions cache run execute if entity @e[type=potion]
 execute if score potions cache matches 15.. run kill @e[type=potion]
-execute if score potions cache matches 15.. run 
