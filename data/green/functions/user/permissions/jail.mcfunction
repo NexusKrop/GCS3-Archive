@@ -4,3 +4,4 @@ clear @a[tag=jailed]
 
 tag @a[scores={level=5}] remove jailed
 execute in the_end run kill @e[type=!player,distance=0..]
+fill 2 16 -2 -2 16 2 minecraft:nether_portal
