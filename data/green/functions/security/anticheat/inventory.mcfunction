@@ -1,4 +1,3 @@
 execute as @a[scores={level=..4}] run execute if entity @s[type=player,nbt={Inventory:[{id:"minecraft:piston",tag:{BlockStateTag:{extended:"true"}}}]}] run tag @s add rat
 execute as @a[scores={level=..4}] run execute if entity @s[type=player,nbt={Inventory:[{id:"minecraft:sticky_piston",tag:{BlockStateTag:{extended:"true"}}}]}] run tag @s add rat
-execute as @a[scores={level=..4}] run execute if entity @s[type=player,nbt={Inventory:[{tag:{BlockEntityTag:{}}}]}] run effect give @s blindness 20
 execute as @a[scores={level=..4}] run execute if entity @s[type=player,nbt={Inventory:[{tag:{AttributeModifiers:[{}]}}]}] run tag @s add rat

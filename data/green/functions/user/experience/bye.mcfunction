@@ -1,0 +1,2 @@
+execute as @a[tag=!firstJoin,scores={level=0}] run tellraw @a [{"text": "GCS3","color": "aqua"},{"text": ">> ","color": "white","bold": true},{"text":"欢迎新玩家","color": "white"},{"selector":"@a[tag=!firstJoin]"},{"text":"！"}]
+tag @a[tag=!firstJoin] add firstJoin

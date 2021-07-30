@@ -10,7 +10,11 @@ scoreboard players enable @a rule
 execute as @a[scores={rule=1..}] run function green:user/allofrule
 execute as @a[scores={rule=1..}] run scoreboard players set @s rule 0
 
-
+# Stopsound
+scoreboard objectives add stopsound trigger
+scoreboard players enable @a stopsound
+execute as @a[scores={stopsound=1..}] run stopsound @s master
+execute as @a[scores={stopsound=1..}] run scoreboard players set @s stopsound 0
 
 # Blocklist inactive
 # scoreboard objectives add blocklist trigger
