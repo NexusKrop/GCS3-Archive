@@ -20,7 +20,6 @@
         "green:user/experience/bye",
         "green:security/banned_items",
         "green:security/anticheat/mirror",
-        "green:security/anticheat/alert",
-        "green:user/experience/obby"
+        "green:security/anticheat/alert"
     ]
 }

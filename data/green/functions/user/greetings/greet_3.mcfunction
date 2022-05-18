@@ -1,4 +1,4 @@
-title @a actionbar {"text": "守衛者使船擱淺，海底神殿在前方。刷怪籠旁沒寶箱，水井生出仙人掌。","bold": true}
+title @a actionbar {"text": "致本日参与跑酷玩家：跑酷系统已暂时关闭","bold": true,"color": "red"}
 
 #计分板
 scoreboard objectives setdisplay belowName level
